@@ -25,10 +25,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Center(
-          child: Text('Nama: Galih Fuad Husen', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
-        ),
-        Center(
-          child: Text('NIM: 190103009', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+          child: Text('SELAMAT DATANG DI RENTAL MOBILKU', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
         ),
         SizedBox(height: 20),
         SizedBox(

@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   onPressed: () {
-                    if (userNameController.text == 'username' && passwordController.text == "pass_password") {
+                    if (userNameController.text == 'username' && passwordController.text == "password") {
                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                         content: Text('Berhasil Login'),
                       ));
