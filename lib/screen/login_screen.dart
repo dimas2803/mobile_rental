@@ -24,10 +24,10 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             children: [
               Image.asset('images/gambar1.png', width: 280.0),
-              Text('Selamat Datang', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
+              Text('Selamat Datang Di', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
               SizedBox(height: 10),
               Text('Rental Mobil', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
-              SizedBox(height: 10),
+              SizedBox(height: 5),
               Text(
                 'Log in ke akun yang sudah ada',
                 style: TextStyle(color: Colors.black.withOpacity(0.5)),
