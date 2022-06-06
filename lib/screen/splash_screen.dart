@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset('images/UDB-LOGO.png'),
+            Image.asset('images/gambar1.png'),
             CircularProgressIndicator(),
           ],
         ),
