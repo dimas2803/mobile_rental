@@ -100,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               SizedBox(height: 25),
               Text(
-                'Or connect using',
+                'Masuk Dengan',
                 style: TextStyle(
                   color: Colors.black.withOpacity(0.6),
                 ),
