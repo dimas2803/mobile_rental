@@ -134,7 +134,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
                   child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                    Text('Dont have an account?'),
+                    Text('Belum Punya Akun?'),
                     TextButton(
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context) => SignupScreen()));
