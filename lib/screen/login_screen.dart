@@ -24,10 +24,12 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             children: [
               Image.asset('images/gambar1.png', width: 280.0),
-              Text('Welcome', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
+              Text('Selamat Datang', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
+              SizedBox(height: 10),
+              Text('Rental Mobil', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
               SizedBox(height: 10),
               Text(
-                'Log in to your existant account of Q Afture',
+                'Log in ke akun yang sudah ada',
                 style: TextStyle(color: Colors.black.withOpacity(0.5)),
               ),
               Padding(
@@ -63,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         onPressed: () {
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Fitur masih dalam pengembangan')));
                         },
-                        child: Text('Forgot Password?'))
+                        child: Text('Lupa Kata Sandi?'))
                   ])),
               SizedBox(
                 height: 20,
@@ -78,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   onPressed: () {
-                    if (userNameController.text == 'user_uts' && passwordController.text == "pass_uts") {
+                    if (userNameController.text == 'username' && passwordController.text == "pass_password") {
                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                         content: Text('Berhasil Login'),
                       ));
