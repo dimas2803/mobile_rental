@@ -17,14 +17,14 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Sign Up'),
+          title: Text(''),
         ),
         body: SingleChildScrollView(
             child: Column(children: [
           SizedBox(height: 20),
-          Text("Let's Get Started", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
+          Text("GABUNG", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
           Text(
-            'Creat an account to Q alure to get all Leatures',
+            'Buat Akun Anda Untuk Memulai',
             style: TextStyle(color: Colors.black.withOpacity(0.5)),
           ),
           SizedBox(height: 20),
@@ -64,7 +64,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   prefixIcon: Icon(Icons.phone_android_outlined, size: 20),
                   // labelText: "Username",
-                  hintText: "Phone",
+                  hintText: "Nomor",
                 )),
           ),
           Padding(
@@ -90,7 +90,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   prefixIcon: Icon(Icons.lock, size: 20),
                   // labelText: "Username",
-                  hintText: "Confirm Password",
+                  hintText: "Konfirm Password",
                 )),
           ),
           SizedBox(height: 20),
@@ -104,19 +104,19 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
               ),
               onPressed: () {},
-              child: Text('CREATE'),
+              child: Text('REGISTER'),
             ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Already have an account?'),
+              Text('Sudah Punya Akun?'),
               TextButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
                 },
                 child: Text(
-                  "Login here",
+                  "Login disini",
                 ),
               ),
             ],
