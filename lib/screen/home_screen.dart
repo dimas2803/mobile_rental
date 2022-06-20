@@ -66,6 +66,11 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => LoginScreen(),
+                ));
+              },
               leading: Icon(Icons.logout_outlined),
               title: Text(
                 "Logout",
