@@ -12,16 +12,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: new IconButton(
-            icon: Icon(Icons.account_circle),
-            onPressed: () {
-              Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (context) => LoginScreen()),
-              );
-            }),
-        iconTheme: IconThemeData(
-          color: Colors.black, //change your color here
-        ),
         backgroundColor: Colors.transparent,
         title: Text(
           "Home Screen",
