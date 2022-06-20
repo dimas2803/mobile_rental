@@ -2,6 +2,7 @@ import 'dart:html';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:uas/widget/settings.dart';
 import 'login_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -58,7 +59,7 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               onTap: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => HomeScreen(),
+                  builder: (context) => SettingsPage(),
                 ));
               },
               leading: Icon(Icons.settings),
