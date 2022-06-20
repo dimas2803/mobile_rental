@@ -27,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Text('Abadi Trans', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
               SizedBox(height: 10),
               Text(
-                'Log in ke akun yang sudah ada',
+                'Login ke akun yang sudah ada',
                 style: TextStyle(color: Colors.black.withOpacity(0.5)),
               ),
               Padding(
