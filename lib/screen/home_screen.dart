@@ -9,11 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: new IconButton(
-            icon: Icon(Icons.account_circle),
-            onPressed: () {
-              Navigator.of(context).pop();
-            }),
+        leading: new IconButton(icon: Icon(Icons.account_circle), onPressed: () {}),
         iconTheme: IconThemeData(
           color: Colors.black, //change your color here
         ),
