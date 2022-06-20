@@ -53,6 +53,11 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ));
+              },
               leading: Icon(Icons.settings),
               title: Text(
                 "Setings",
@@ -62,6 +67,11 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ));
+              },
               leading: Icon(Icons.access_time),
               title: Text(
                 "Riwayat Pesanan",
