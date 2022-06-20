@@ -4,6 +4,7 @@ import 'package:uas/my_drawer_header.dart';
 import 'package:uas/screen/home_screen.dart';
 import 'package:uas/screen/splash_screen.dart';
 
+import 'package:uas/widget/dashboard.dart';
 import 'package:uas/widget/contacts.dart';
 import 'package:uas/widget/events.dart';
 import 'package:uas/widget/notes.dart';
@@ -41,7 +42,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     var container;
     if (currentPage == DrawerSections.dashboard) {
-      container = HomeScreen();
+      container = DashboardPage();
     } else if (currentPage == DrawerSections.contacts) {
       container = ContactsPage();
     } else if (currentPage == DrawerSections.events) {
@@ -155,6 +156,8 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+class DashboardPage {}
 
 enum DrawerSections {
   dashboard,
