@@ -3,7 +3,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:uas/my_drawer_header.dart';
 import 'package:uas/screen/home_screen.dart';
 import 'package:uas/screen/splash_screen.dart';
-
+import 'package:uas/my_drawer_header.dart';
 import 'package:uas/widget/dashboard.dart';
 import 'package:uas/widget/contacts.dart';
 import 'package:uas/widget/events.dart';
