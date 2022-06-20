@@ -12,82 +12,76 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: new ThemeData(primarySwatch: Colors.teal),
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
+        backgroundColor: Colors.teal[600],
+        title: Text(
+          "Abadi Trans",
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      drawer: Drawer(
+        child: new ListView(
+          children: <Widget>[
+            new UserAccountsDrawerHeader(
+              accountName: new Text("Galih Fuad Husen"),
+              accountEmail: new Text("galih@gmail.com"),
+              currentAccountPicture: new CircleAvatar(
+                backgroundColor: Colors.teal[600],
+                child: new Text("P"),
+              ),
+            ),
+            ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ));
+              },
+              title: new Text("Home"),
+              leading: new Icon(Icons.home),
+            ),
+            ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ));
+              },
+              title: new Text("Riwayat Pesanan"),
+              leading: new Icon(Icons.access_time),
+            ),
+            ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ));
+              },
+              title: new Text("Settings"),
+              leading: new Icon(Icons.settings),
+            ),
+            new Divider(),
+            ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => LoginScreen(),
+                ));
+              },
+              title: new Text("Logout"),
+              leading: new Icon(Icons.logout_outlined),
+            ),
+          ],
+        ),
+      ),
+      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Center(
+          child: Text('SELAMAT DATANG DI', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+        ),
+        Center(
+          child: Text('RENTAL MOBILKU', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+        ),
+      ]),
     );
-    @override
-    Widget build(BuildContext context) {
-      return Scaffold(
-        appBar: AppBar(
-          iconTheme: IconThemeData(
-            color: Colors.white, //change your color here
-          ),
-          backgroundColor: Colors.teal[600],
-          title: Text(
-            "Abadi Trans",
-            style: TextStyle(color: Colors.white),
-          ),
-        ),
-        drawer: Drawer(
-          child: new ListView(
-            children: <Widget>[
-              new UserAccountsDrawerHeader(
-                accountName: new Text("Galih Fuad Husen"),
-                accountEmail: new Text("galih@gmail.com"),
-                currentAccountPicture: new CircleAvatar(
-                  backgroundColor: Colors.teal[600],
-                  child: new Text("P"),
-                ),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => HomeScreen(),
-                  ));
-                },
-                title: new Text("Home"),
-                leading: new Icon(Icons.home),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => HomeScreen(),
-                  ));
-                },
-                title: new Text("Riwayat Pesanan"),
-                leading: new Icon(Icons.access_time),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => HomeScreen(),
-                  ));
-                },
-                title: new Text("Settings"),
-                leading: new Icon(Icons.settings),
-              ),
-              new Divider(),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => LoginScreen(),
-                  ));
-                },
-                title: new Text("Logout"),
-                leading: new Icon(Icons.logout_outlined),
-              ),
-            ],
-          ),
-        ),
-        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Center(
-            child: Text('SELAMAT DATANG DI', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
-          ),
-          Center(
-            child: Text('RENTAL MOBILKU', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
-          ),
-        ]),
-      );
-    }
   }
 }
