@@ -39,12 +39,12 @@ class HomeScreen extends StatelessWidget {
               leading: new Icon(Icons.home),
             ),
             ListTile(
-              title: new Text("Settings"),
-              leading: new Icon(Icons.settings),
-            ),
-            ListTile(
               title: new Text("Riwayat Pesanan"),
               leading: new Icon(Icons.access_time),
+            ),
+            ListTile(
+              title: new Text("Settings"),
+              leading: new Icon(Icons.settings),
             ),
             new Divider(),
             ListTile(
