@@ -43,7 +43,16 @@ class HomeScreen extends StatelessWidget {
               title: Text(
                 "Home",
                 style: TextStyle(
-                  fontSize: 35,
+                  fontSize: 25,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: Text(
+                "Setings",
+                style: TextStyle(
+                  fontSize: 25,
                 ),
               ),
             ),
