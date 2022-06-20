@@ -1,3 +1,6 @@
+import 'dart:html';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'login_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -19,7 +22,37 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(color: Colors.black),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(20),
+              width: double.infinity,
+              height: 150,
+              color: Colors.red,
+              alignment: Alignment.bottomLeft,
+              child: Text(
+                "Menu Pilihan",
+                style: TextStyle(
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text(
+                "Home",
+                style: TextStyle(
+                  fontSize: 35,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Center(
           child: Text('SELAMAT DATANG DI', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
