@@ -35,14 +35,29 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ));
+              },
               title: new Text("Home"),
               leading: new Icon(Icons.home),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ));
+              },
               title: new Text("Riwayat Pesanan"),
               leading: new Icon(Icons.access_time),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ));
+              },
               title: new Text("Settings"),
               leading: new Icon(Icons.settings),
             ),
