@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
               title: Text(
                 "Home",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 10,
                 ),
               ),
             ),
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
               title: Text(
                 "Setings",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 10,
                 ),
               ),
             ),
@@ -61,7 +61,7 @@ class HomeScreen extends StatelessWidget {
               title: Text(
                 "Riwayat Pesanan",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 10,
                 ),
               ),
             ),
