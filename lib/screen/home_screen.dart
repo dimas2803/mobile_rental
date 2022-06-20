@@ -17,8 +17,8 @@ class HomeScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.teal[600],
         title: Text(
-          "Home Screen",
-          style: TextStyle(color: Colors.black),
+          "Abadi Trans",
+          style: TextStyle(color: Colors.white),
         ),
       ),
       drawer: Drawer(
