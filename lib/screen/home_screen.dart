@@ -65,6 +65,15 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+            ListTile(
+              leading: Icon(Icons.logout_outlined),
+              title: Text(
+                "Logout",
+                style: TextStyle(
+                  fontSize: 22,
+                ),
+              ),
+            ),
           ],
         ),
       ),
