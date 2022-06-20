@@ -22,7 +22,7 @@ class _SignupScreenState extends State<SignupScreen> {
         body: SingleChildScrollView(
             child: Column(children: [
           SizedBox(height: 20),
-          Text("GABUNG", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
+          Text("SignUp", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
           Text(
             'Buat Akun Anda Untuk Memulai',
             style: TextStyle(color: Colors.black.withOpacity(0.5)),
@@ -52,19 +52,6 @@ class _SignupScreenState extends State<SignupScreen> {
                   prefixIcon: Icon(Icons.email_outlined, size: 20),
                   // labelText: "Username",
                   hintText: "Email",
-                )),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-            child: TextFormField(
-                controller: userPhoneController,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  prefixIcon: Icon(Icons.phone_android_outlined, size: 20),
-                  // labelText: "Username",
-                  hintText: "Nomor",
                 )),
           ),
           Padding(
