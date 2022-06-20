@@ -23,6 +23,7 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(color: Colors.black),
         ),
       ),
+      drawer: Drawer(),
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Center(
           child: Text('SELAMAT DATANG DI', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
