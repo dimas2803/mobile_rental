@@ -36,14 +36,14 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 24,
             ),
             ListTile(
               leading: Icon(Icons.home),
               title: Text(
                 "Home",
                 style: TextStyle(
-                  fontSize: 10,
+                  fontSize: 24,
                 ),
               ),
             ),
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
               title: Text(
                 "Setings",
                 style: TextStyle(
-                  fontSize: 10,
+                  fontSize: 24,
                 ),
               ),
             ),
