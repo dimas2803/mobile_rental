@@ -42,9 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Center(
-          children: [
-            Image.asset('images/gambar1.png'),
-          ],
+          child: Image.asset('images/gambar1.png'),
         ),
       ),
     );
