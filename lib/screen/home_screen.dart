@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.access_time),
               title: Text(
-                "riwayat Pesanan",
+                "Riwayat Pesanan",
                 style: TextStyle(
                   fontSize: 25,
                 ),
