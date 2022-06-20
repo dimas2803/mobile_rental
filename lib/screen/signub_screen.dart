@@ -17,6 +17,7 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.teal[600],
           title: Text(''),
         ),
         body: SingleChildScrollView(
@@ -86,6 +87,7 @@ class _SignupScreenState extends State<SignupScreen> {
             height: 50,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
+                primary: Colors.teal[600],
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
