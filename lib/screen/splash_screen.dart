@@ -40,8 +40,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Center(
+      body: Center(
+        child: Container(
+          width: 200,
+          height: 200,
           child: Image.asset('images/gambar1.png'),
         ),
       ),
