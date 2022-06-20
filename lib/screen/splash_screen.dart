@@ -14,7 +14,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   startTimer() async {
-    var duration = Duration(seconds: 10);
+    var duration = Duration(seconds: 5);
     return Timer(duration, () async {
       var box = Hive.box('userBox');
       bool? sudahLogin = box.get('isLogin');
