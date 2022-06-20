@@ -31,8 +31,8 @@ class HomeScreen extends StatelessWidget {
               accountEmail: new Text("galih@gmail.com"),
             ),
             ListTile(
-              title: new Text("page 1"),
               trailing: new Icon(Icons.home),
+              title: new Text("page 1"),
             ),
             ListTile(
               title: new Text("page 2"),
