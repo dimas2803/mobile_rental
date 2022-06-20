@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               onTap: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => SettingsPage(),
+                  builder: (context) => HomeScreen(),
                 ));
               },
               leading: Icon(Icons.settings),
