@@ -25,6 +25,5 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
     );
-    Drawer();
   }
 }
