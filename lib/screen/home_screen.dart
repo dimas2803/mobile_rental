@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               onTap: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => HomeScreen(),
+                  builder: (context) => SettingsPage(),
                 ));
               },
               title: new Text("Settings"),
@@ -65,7 +65,7 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               onTap: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => SettingsPage(),
+                  builder: (context) => LoginScreen(),
                 ));
               },
               title: new Text("Logout"),
