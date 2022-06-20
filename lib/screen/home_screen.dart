@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
               accountName: new Text("Galih Fuad Husen"),
               accountEmail: new Text("galih@gmail.com"),
               currentAccountPicture: new CircleAvatar(
-                backgroundColor: Colors.teal[600],
+                backgroundColor: Colors.blue,
                 child: new Text("P"),
               ),
             ),
