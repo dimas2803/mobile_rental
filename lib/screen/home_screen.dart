@@ -31,21 +31,21 @@ class HomeScreen extends StatelessWidget {
               accountEmail: new Text("galih@gmail.com"),
             ),
             ListTile(
-              trailing: new Icon(Icons.home),
               title: new Text("page 1"),
+              leading: new Icon(Icons.home),
             ),
             ListTile(
               title: new Text("page 2"),
-              trailing: new Icon(Icons.settings),
+              leading: new Icon(Icons.settings),
             ),
             ListTile(
               title: new Text("page 3"),
-              trailing: new Icon(Icons.access_time),
+              leading: new Icon(Icons.access_time),
             ),
             new Divider(),
             ListTile(
               title: new Text("page 3"),
-              trailing: new Icon(Icons.logout_outlined),
+              leading: new Icon(Icons.logout_outlined),
             ),
           ],
         ),
