@@ -28,6 +28,13 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
             "Abadi Trans",
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
+          Text(
+            "kelompok 2",
+            style: TextStyle(
+              color: Colors.grey[200],
+              fontSize: 14,
+            ),
+          ),
         ],
       ),
     );

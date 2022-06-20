@@ -19,27 +19,6 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Container(
-        child: Center(
-          child: Text("home Page"),
-        ),
-      ),
-      drawer: Drawer(
-        child: SingleChildScrollView(
-          child: Container(
-            child: Column(
-              children: [
-                MyHeaderDrawer(),
-                MyDrawerList(),
-              ],
-            ),
-          ),
-        ),
-      ),
     );
-  }
-
-  Widget MyDrawerList() {
-    return Container();
   }
 }
