@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:uas/widget/settings.dart';
 import 'login_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:uas/widget/settings.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
