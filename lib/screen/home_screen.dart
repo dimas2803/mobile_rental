@@ -39,6 +39,11 @@ class HomeScreen extends StatelessWidget {
               height: 24,
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ));
+              },
               leading: Icon(Icons.home),
               title: Text(
                 "Home",
