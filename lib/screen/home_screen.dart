@@ -29,22 +29,31 @@ class HomeScreen extends StatelessWidget {
             new UserAccountsDrawerHeader(
               accountName: new Text("Galih Fuad Husen"),
               accountEmail: new Text("galih@gmail.com"),
+              currentAccountPicture: new CircleAvatar(
+                backgroundColor: Colors.teal[600],
+                child: new Text("P"),
+              ),
             ),
             ListTile(
-              title: new Text("page 1"),
+              title: new Text("Home"),
               leading: new Icon(Icons.home),
             ),
             ListTile(
-              title: new Text("page 2"),
+              title: new Text("Settings"),
               leading: new Icon(Icons.settings),
             ),
             ListTile(
-              title: new Text("page 3"),
+              title: new Text("Riwayat Pesanan"),
               leading: new Icon(Icons.access_time),
             ),
             new Divider(),
             ListTile(
-              title: new Text("page 3"),
+              onTap: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => LoginScreen(),
+                ));
+              },
+              title: new Text("Logout"),
               leading: new Icon(Icons.logout_outlined),
             ),
           ],
