@@ -79,7 +79,7 @@ class HomeScreen extends StatelessWidget {
           elevation: 0,
           shape: RoundedRectangleBorder(
             side: BorderSide(
-              color: Theme.of(context).colorScheme.outline,
+              color: Theme.of(context).colorScheme.surfaceVariant,
             ),
             borderRadius: const BorderRadius.all(Radius.circular(12)),
           ),
