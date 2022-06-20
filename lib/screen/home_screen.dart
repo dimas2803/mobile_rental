@@ -31,6 +31,7 @@ class HomeScreen extends StatelessWidget {
                 "Menu Pilihan",
                 style: TextStyle(
                   fontSize: 24,
+                  color: Colors.white,
                 ),
               ),
             ),
