@@ -19,6 +19,12 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
       ),
+      body: Container(
+        child: Center(
+          child: Text("home Page"),
+        ),
+      ),
     );
+    Drawer();
   }
 }
