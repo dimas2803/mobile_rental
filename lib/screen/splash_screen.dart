@@ -41,12 +41,9 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        child: Center(
           children: [
             Image.asset('images/gambar1.png'),
-            CircularProgressIndicator(),
           ],
         ),
       ),
