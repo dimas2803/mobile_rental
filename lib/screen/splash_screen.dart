@@ -14,7 +14,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   startTimer() async {
-    var duration = Duration(seconds: 10);
+    var duration = Duration(seconds: 5);
     return Timer(duration, () async {
       var box = Hive.box('userBox');
       bool? sudahLogin = box.get('isLogin');
@@ -40,14 +40,11 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Image.asset('images/gambar1.png'),
-            CircularProgressIndicator(),
-          ],
+      body: Center(
+        child: Container(
+          width: 300,
+          height: 400,
+          child: Image.asset('images/gambar1.png'),
         ),
       ),
     );

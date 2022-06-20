@@ -17,12 +17,13 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.teal[600],
           title: Text(''),
         ),
         body: SingleChildScrollView(
             child: Column(children: [
           SizedBox(height: 20),
-          Text("GABUNG", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
+          Text("SignUp", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
           Text(
             'Buat Akun Anda Untuk Memulai',
             style: TextStyle(color: Colors.black.withOpacity(0.5)),
@@ -57,19 +58,6 @@ class _SignupScreenState extends State<SignupScreen> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextFormField(
-                controller: userPhoneController,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  prefixIcon: Icon(Icons.phone_android_outlined, size: 20),
-                  // labelText: "Username",
-                  hintText: "Nomor",
-                )),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-            child: TextFormField(
                 controller: userPasswordController,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -99,6 +87,7 @@ class _SignupScreenState extends State<SignupScreen> {
             height: 50,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
+                primary: Colors.teal[600],
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
