@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
         iconTheme: IconThemeData(
           color: Colors.black, //change your color here
         ),
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.teal[600],
         title: Text(
           "Home Screen",
           style: TextStyle(color: Colors.black),
