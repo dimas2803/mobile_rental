@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.teal[600],
         title: Text(
           "Home Screen",
           style: TextStyle(color: Colors.white),
@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               padding: EdgeInsets.all(20),
               width: double.infinity,
               height: 150,
-              color: Colors.red,
+              color: Colors.teal[600],
               alignment: Alignment.bottomLeft,
               child: Text(
                 "Menu Pilihan",
