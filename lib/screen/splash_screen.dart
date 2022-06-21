@@ -6,8 +6,6 @@ import 'login_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
-
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
@@ -17,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
     var duration = Duration(seconds: 5);
     return Timer(duration, () async {
       var box = Hive.box('userBox');
-      bool? sudahLogin = box.get('isLogin');
+      bool sudahLogin = box.get('isLogin');
 
       if (sudahLogin ?? false) {
         Navigator.of(context).pushReplacement(

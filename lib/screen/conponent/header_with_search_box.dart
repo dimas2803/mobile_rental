@@ -8,7 +8,7 @@ class HeaderWithSearchBox extends StatelessWidget {
     @required this.size,
   }) : super(key: key);
 
-  finsize size;
+  final Size size;
 
   @override
   Widget build(BuildContext context) {

@@ -7,8 +7,6 @@ import 'login_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
