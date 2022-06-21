@@ -2,6 +2,7 @@ import 'dart:html';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:uas/screen/conponent/body.dart';
 import 'login_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -72,14 +73,7 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Center(
-          child: Text('SELAMAT DATANG DI', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
-        ),
-        Center(
-          child: Text('RENTAL MOBILKU', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
-        ),
-      ]),
+      body: Body(),
     );
   }
 }
