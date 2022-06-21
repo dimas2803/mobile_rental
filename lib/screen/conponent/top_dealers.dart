@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sewain_aku/utils/colors.dart';
-import 'package:sewain_aku/utils/sizes.dart';
+import 'package:uas/utils/colors.dart';
+import 'package:uas/utils/sizes.dart';
 
 class TopDealers extends StatelessWidget {
   const TopDealers({
@@ -84,14 +84,10 @@ class TopDealersCard extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(defaultPadding/2),
+                padding: const EdgeInsets.all(defaultPadding / 2),
                 child: Text(
                   "$title",
-                  style: TextStyle(
-                      color: textColor,
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold
-                  ),
+                  style: TextStyle(color: textColor, fontSize: 26, fontWeight: FontWeight.bold),
                 ),
               ),
             ],

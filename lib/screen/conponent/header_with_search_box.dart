@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sewain_aku/utils/colors.dart';
-import 'package:sewain_aku/utils/sizes.dart';
-
+import 'package:uas/utils/colors.dart';
+import 'package:uas/utils/sizes.dart';
 
 class HeaderWithSearchBox extends StatelessWidget {
   const HeaderWithSearchBox({
@@ -9,7 +8,7 @@ class HeaderWithSearchBox extends StatelessWidget {
     @required this.size,
   }) : super(key: key);
 
-  final Size size;
+  finsize size;
 
   @override
   Widget build(BuildContext context) {
@@ -36,11 +35,14 @@ class HeaderWithSearchBox extends StatelessWidget {
               children: <Widget>[
                 Text(
                   'Sewain Aku Donk!',
-                  style: Theme.of(context).textTheme.headline5.copyWith(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                  style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
                 ),
                 Spacer(),
-                Icon(Icons.person_pin, color: Colors.white, size: 100,)
+                Icon(
+                  Icons.person_pin,
+                  color: Colors.white,
+                  size: 100,
+                )
               ],
             ),
           ),

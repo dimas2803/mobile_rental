@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sewain_aku/utils/colors.dart';
-import 'package:sewain_aku/utils/sizes.dart';
+import 'package:uas/utils/colors.dart';
+import 'package:uas/utils/sizes.dart';
 
 class TitleWithViewAllBtn extends StatelessWidget {
   const TitleWithViewAllBtn({

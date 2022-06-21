@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sewain_aku/utils/colors.dart';
-import 'package:sewain_aku/utils/sizes.dart';
+import 'package:uas/utils/colors.dart';
+import 'package:uas/utils/sizes.dart';
 
 class HotDeals extends StatelessWidget {
   const HotDeals({
@@ -18,16 +18,14 @@ class HotDeals extends StatelessWidget {
             title: "Simamora Travel",
             location: "Toba Samosir",
             price: 200090,
-            press: () {
-            },
+            press: () {},
           ),
           HotDealCard(
             image: "assets/porsche/porsche_boxster.png",
             title: "Indah Travel",
             location: "Dolok Sanggul",
             price: 238000,
-            press: () {
-            },
+            press: () {},
           ),
           HotDealCard(
             image: "assets/porsche/porsche_cayman.png",
@@ -87,11 +85,9 @@ class HotDealCard extends StatelessWidget {
             Container(
               alignment: Alignment.topLeft,
               padding: new EdgeInsets.only(left: defaultPadding, top: defaultPadding),
-              child: Text("$title",
-                style: Theme.of(context)
-                    .textTheme
-                    .button
-                    .copyWith(color: textColor),
+              child: Text(
+                "$title",
+                style: Theme.of(context).textTheme.button.copyWith(color: textColor),
               ),
             ),
             Container(
@@ -99,23 +95,17 @@ class HotDealCard extends StatelessWidget {
               padding: new EdgeInsets.only(left: defaultPadding),
               child: Text(
                 "$location",
-                style: Theme.of(context)
-                    .textTheme
-                    .button
-                    .copyWith(color: primaryColor.withOpacity(0.5)),
+                style: Theme.of(context).textTheme.button.copyWith(color: primaryColor.withOpacity(0.5)),
               ),
             ),
             Image.asset(image),
             Container(
               width: widthCard,
               alignment: Alignment.centerRight,
-              padding: new EdgeInsets.only(right: defaultPadding, bottom: defaultPadding/2),
+              padding: new EdgeInsets.only(right: defaultPadding, bottom: defaultPadding / 2),
               child: Text(
                 'Rp $price',
-                style: Theme.of(context)
-                    .textTheme
-                    .button
-                    .copyWith(color: primaryColor),
+                style: Theme.of(context).textTheme.button.copyWith(color: primaryColor),
               ),
             ),
             SizedBox(
