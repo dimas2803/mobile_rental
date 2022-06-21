@@ -98,7 +98,7 @@ class HotDealCard extends StatelessWidget {
                 style: Theme.of(context).textTheme.button.copyWith(color: primaryColor.withOpacity(0.5)),
               ),
             ),
-            Image.asset(image),
+            Image.asset(images),
             Container(
               width: widthCard,
               alignment: Alignment.centerRight,
