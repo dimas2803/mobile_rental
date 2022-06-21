@@ -50,8 +50,8 @@ flutter:
     - images/
     - images/bmw_6_series/
     - images/honda/
-    - assets/mercedes_benz_cla/
-    - assets/porsche/
+    - images/mercedes_benz_cla/
+    - images/porsche/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
