@@ -14,7 +14,7 @@ class HotDeals extends StatelessWidget {
       child: Row(
         children: <Widget>[
           HotDealCard(
-            image: "assets/porsche/porsche_911.png",
+            image: "images/porsche/porsche_911.png",
             title: "Simamora Travel",
             location: "Toba Samosir",
             price: 200090,
