@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
         iconTheme: IconThemeData(
           color: Colors.white, //change your color here
         ),
-        backgroundColor: Colors.teal[600],
+        backgroundColor: Colors.teal[700],
         title: Text(
           "Abadi Trans",
           style: TextStyle(color: Colors.white),

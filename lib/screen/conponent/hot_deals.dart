@@ -15,28 +15,28 @@ class HotDeals extends StatelessWidget {
         children: <Widget>[
           HotDealCard(
             image: "images/porsche/porsche_911.png",
-            title: "Simamora Travel",
+            title: "porsche 911",
             location: "Toba Samosir",
             price: 200090,
             press: () {},
           ),
           HotDealCard(
             image: "images/porsche/porsche_boxster.png",
-            title: "Indah Travel",
+            title: "porsche boxster",
             location: "Dolok Sanggul",
             price: 238000,
             press: () {},
           ),
           HotDealCard(
             image: "images/porsche/porsche_cayman.png",
-            title: "Gondrong Travel",
+            title: "porsche cayman",
             location: "Medan",
             price: 420000,
             press: () {},
           ),
           HotDealCard(
             image: "images/porsche/porsche_macan.png",
-            title: "Kutu Gondrong",
+            title: "porsche macan",
             location: "Jakarta",
             price: 340000,
             press: () {},
