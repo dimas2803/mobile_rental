@@ -38,11 +38,6 @@ class HeaderWithSearchBox extends StatelessWidget {
                   style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
                 ),
                 Spacer(),
-                Icon(
-                  Icons.person_pin,
-                  color: Colors.white,
-                  size: 100,
-                )
               ],
             ),
           ),
