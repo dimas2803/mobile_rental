@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'login_screen.dart';
+import 'package:uas/login/login_screen.dart';
 
 class SignupScreen extends StatefulWidget {
   _SignupScreenState createState() => _SignupScreenState();

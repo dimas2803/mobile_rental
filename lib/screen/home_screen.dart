@@ -3,7 +3,7 @@ import 'dart:html';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:uas/screen/conponent/body.dart';
-import 'login_screen.dart';
+import 'package:uas/login/login_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
