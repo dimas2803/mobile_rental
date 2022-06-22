@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:uas/screen/conponent/body.dart';
 import 'package:uas/login/login_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:uas/screen/recently_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -43,7 +44,7 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               onTap: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => HomeScreen(),
+                  builder: (context) => Recently_screen(),
                 ));
               },
               title: new Text("Riwayat Pesanan"),
