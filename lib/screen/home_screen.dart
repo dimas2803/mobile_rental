@@ -6,6 +6,7 @@ import 'package:uas/screen/conponent/body.dart';
 import 'package:uas/login/login_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:uas/screen/recently_screen.dart';
+import 'package:uas/screen/settings_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
