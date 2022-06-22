@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uas/screen/home_screen.dart';
 
 class Settings_screen extends StatefulWidget {
   const Settings_screen({Key key}) : super(key: key);
@@ -13,7 +14,9 @@ class _Settings_screenState extends State<Settings_screen> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.of(context).pop();
+            Navigator.of(context).pushReplacement(MaterialPageRoute(
+              builder: (context) => HomeScreen(),
+            ));
           },
         ),
         iconTheme: IconThemeData(

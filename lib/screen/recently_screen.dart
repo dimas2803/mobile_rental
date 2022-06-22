@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uas/screen/home_screen.dart';
 
 class Recently_screen extends StatefulWidget {
   const Recently_screen({Key key}) : super(key: key);
@@ -13,7 +14,9 @@ class _Recently_screenState extends State<Recently_screen> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.of(context).pop();
+            Navigator.of(context).pushReplacement(MaterialPageRoute(
+              builder: (context) => HomeScreen(),
+            ));
           },
         ),
         iconTheme: IconThemeData(
