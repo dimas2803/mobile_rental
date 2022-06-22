@@ -9,7 +9,19 @@ class _Settings_screenState extends State<Settings_screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Settings_screen(),
+      appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.white,
+        ),
+        backgroundColor: Colors.teal[700],
+        title: Text(
+          "Settings",
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      body: Center(
+        child: Text("Ini Adalah Halaman Settings"),
+      ),
     );
   }
 }

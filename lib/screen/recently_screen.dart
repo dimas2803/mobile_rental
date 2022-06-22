@@ -9,7 +9,19 @@ class _Recently_screenState extends State<Recently_screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Recently_screen(),
+      appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.white,
+        ),
+        backgroundColor: Colors.teal[700],
+        title: Text(
+          "Riwayat Pesanan",
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      body: Center(
+        child: Text("Ini Adalah Halaman Riwayat Pesanan"),
+      ),
     );
   }
 }
