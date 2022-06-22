@@ -10,6 +10,12 @@ class _Recently_screenState extends State<Recently_screen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
         iconTheme: IconThemeData(
           color: Colors.white,
         ),
