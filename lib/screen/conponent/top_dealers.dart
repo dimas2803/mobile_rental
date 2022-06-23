@@ -16,22 +16,22 @@ class TopDealers extends StatelessWidget {
         children: <Widget>[
           TopDealersCard(
             image: "images/Toyota/toyota-fortuner.png",
-            title: "Mercedes Benz",
+            title: "Fortuner",
             press: () {},
           ),
           TopDealersCard(
             image: "images/Toyota/toyota-alphard.png",
-            title: "Porsche",
+            title: "Alphard",
             press: () {},
           ),
           TopDealersCard(
             image: "images/mitsubishi/mitsubishi-pajero-sport-car.png",
-            title: "BMW 6 Series",
+            title: "Pajero Sport",
             press: () {},
           ),
           TopDealersCard(
             image: "images/Toyota/toyota-hiace-vip-commuter.png",
-            title: "Honda",
+            title: "HIACE",
             press: () {},
           ),
         ],

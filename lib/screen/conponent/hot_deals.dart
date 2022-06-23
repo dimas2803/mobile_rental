@@ -21,14 +21,14 @@ class HotDeals extends StatelessWidget {
             press: () {},
           ),
           HotDealCard(
-            image: "images/toyota/toyota_avansa_new.png",
+            image: "images/Toyota/toyota_avansa_new.png",
             title: "ALL NEW AVANSA",
             location: "Dolok Sanggul",
             price: 300000,
             press: () {},
           ),
           HotDealCard(
-            image: "images/nisan/nisan_grand_livina_old.png",
+            image: "images/Nisan/nisan_grand_livina_old.png",
             title: "GRANDLIVINA OLD",
             location: "Medan",
             price: 280000,
