@@ -14,9 +14,7 @@ class _Settings_screenState extends State<Settings_screen> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (context) => HomeScreen(),
-            ));
+            Navigator.pop(context);
           },
         ),
         iconTheme: IconThemeData(
