@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uas/screen/list_car.dart';
 import 'package:uas/screen/recently_screen.dart';
 import 'package:uas/utils/colors.dart';
 import 'package:uas/utils/sizes.dart';
@@ -35,7 +36,7 @@ class TitleWithViewAllBtn extends StatelessWidget {
                 color: primaryColor,
                 onPressed: () {
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => Recently_screen(),
+                    builder: (context) => ListCar(),
                   ));
                 },
                 child: Text(
