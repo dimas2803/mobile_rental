@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uas/screen/recently_screen.dart';
 import 'package:uas/utils/colors.dart';
 import 'package:uas/utils/sizes.dart';
 
@@ -32,7 +33,11 @@ class TitleWithViewAllBtn extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 color: primaryColor,
-                onPressed: press,
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (context) => Recently_screen(),
+                  ));
+                },
                 child: Text(
                   "View All",
                   style: TextStyle(color: Colors.white),
