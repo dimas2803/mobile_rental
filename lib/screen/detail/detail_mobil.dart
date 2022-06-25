@@ -25,7 +25,7 @@ class _DetailMobilState extends State<DetailMobil> {
         backgroundColor: Colors.teal[700],
         centerTitle: true,
         title: Text(
-          "List Car",
+          "Detail Mobil",
           style: TextStyle(color: Colors.white),
         ),
       ),
