@@ -132,7 +132,11 @@ class HotDealCard extends StatelessWidget {
                   ),
                 ),
                 color: primaryColor,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (context) => DetailMobil(),
+                  ));
+                },
                 child: Text(
                   "Rent Now",
                   style: TextStyle(
