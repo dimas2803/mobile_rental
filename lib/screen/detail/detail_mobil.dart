@@ -1,14 +1,12 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
-import 'package:uas/screen/home_screen.dart';
+import 'package:uas/screen/list_car.dart';
 
-class ListCar extends StatefulWidget {
-  const ListCar({Key key}) : super(key: key);
-  _ListCarState createState() => _ListCarState();
+class DetailMobil extends StatefulWidget {
+  const DetailMobil({Key key}) : super(key: key);
+  _DetailMobilState createState() => _DetailMobilState();
 }
 
-class _ListCarState extends State<ListCar> {
+class _DetailMobilState extends State<DetailMobil> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +15,7 @@ class _ListCarState extends State<ListCar> {
           icon: Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (context) => HomeScreen(),
+              builder: (context) => ListCar(),
             ));
           },
         ),
@@ -32,7 +30,7 @@ class _ListCarState extends State<ListCar> {
         ),
       ),
       body: Center(
-        child: Text("Ini Adalah Halaman List Car"),
+        child: Text("Ini Adalah Halaman Detail Mobil"),
       ),
     );
   }
