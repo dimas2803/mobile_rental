@@ -26,12 +26,12 @@ class _ListCarState extends State<ListCar> {
         ),
         backgroundColor: Colors.teal[700],
         title: Text(
-          "Riwayat Pesanan",
+          "List Car",
           style: TextStyle(color: Colors.white),
         ),
       ),
       body: Center(
-        child: Text("Ini Adalah Halaman Riwayat Pesanan"),
+        child: Text("Ini Adalah Halaman List Car"),
       ),
     );
   }
