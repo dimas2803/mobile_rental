@@ -16,6 +16,11 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.teal[600],
+          title: Text(''),
+          elevation: 0,
+        ),
         backgroundColor: Colors.white,
         resizeToAvoidBottomInset: false, // set it to false
         body: SingleChildScrollView(
