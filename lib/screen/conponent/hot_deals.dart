@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uas/screen/detail/detail_mobil.dart';
 import 'package:uas/utils/colors.dart';
 import 'package:uas/utils/sizes.dart';
 
@@ -18,14 +19,22 @@ class HotDeals extends StatelessWidget {
             title: "HONDA BRIO",
             location: "Toba Samosir",
             price: 220000,
-            press: () {},
+            press: () {
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (context) => DetailMobil(),
+              ));
+            },
           ),
           HotDealCard(
             image: "images/Toyota/toyota_avansa_new.png",
             title: "ALL NEW AVANSA",
             location: "Dolok Sanggul",
             price: 300000,
-            press: () {},
+            press: () {
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (context) => DetailMobil(),
+              ));
+            },
           ),
           HotDealCard(
             image: "images/Nisan/nisan_grand_livina_old.png",
@@ -39,7 +48,11 @@ class HotDeals extends StatelessWidget {
             title: "SIGRA",
             location: "Jakarta",
             price: 270000,
-            press: () {},
+            press: () {
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (context) => DetailMobil(),
+              ));
+            },
           ),
         ],
       ),
