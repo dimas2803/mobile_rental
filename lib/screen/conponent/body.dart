@@ -22,7 +22,7 @@ class Body extends StatelessWidget {
               HeaderWithSearchBox(size: size),
               TitleWithViewAllBtn(title: "Hot Deals", press: () {}),
               HotDeals(),
-              TitleWithViewAllBtn(title: "Top Dealers", press: () {}),
+              TitleWithViewAllBtn(title: "Best Seller", press: () {}),
               TopDealers(),
               SizedBox(height: defaultPadding),
             ],
