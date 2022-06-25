@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
           color: Colors.white, //change your color here
         ),
         backgroundColor: Colors.teal[700],
+        centerTitle: true,
         title: Text(
           "Abadi Trans",
           style: TextStyle(color: Colors.white),
