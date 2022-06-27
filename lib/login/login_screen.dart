@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:uas/screen/home_screen.dart';
-import 'package:uas/screen/signub_screen.dart';
+import 'package:uas/login/signub_screen.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
-
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }
@@ -18,6 +16,11 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          title: Text(''),
+          elevation: 0,
+        ),
         backgroundColor: Colors.white,
         resizeToAvoidBottomInset: false, // set it to false
         body: SingleChildScrollView(

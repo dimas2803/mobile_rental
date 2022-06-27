@@ -1,15 +1,12 @@
-import 'dart:html';
-
-import 'package:flutter/cupertino.dart';
+//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:uas/widget/settings.dart';
-import 'login_screen.dart';
+import 'package:uas/screen/conponent/body.dart';
+import 'package:uas/login/login_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:uas/widget/settings.dart';
+import 'package:uas/screen/recently_screen.dart';
+import 'package:uas/screen/settings_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +14,8 @@ class HomeScreen extends StatelessWidget {
         iconTheme: IconThemeData(
           color: Colors.white, //change your color here
         ),
-        backgroundColor: Colors.teal[600],
+        backgroundColor: Colors.teal[700],
+        centerTitle: true,
         title: Text(
           "Abadi Trans",
           style: TextStyle(color: Colors.white),
@@ -46,7 +44,7 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               onTap: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => HomeScreen(),
+                  builder: (context) => Recently_screen(),
                 ));
               },
               title: new Text("Riwayat Pesanan"),
@@ -55,7 +53,7 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               onTap: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => HomeScreen(),
+                  builder: (context) => Settings_screen(),
                 ));
               },
               title: new Text("Settings"),
@@ -74,14 +72,7 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Center(
-          child: Text('SELAMAT DATANG DI', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
-        ),
-        Center(
-          child: Text('RENTAL MOBILKU', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
-        ),
-      ]),
+      body: Body(),
     );
   }
 }

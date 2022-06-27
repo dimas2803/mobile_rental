@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html><head>
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -27,12 +25,35 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <title>hello_world</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script>
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+      console.info("Initializing firebase...")
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDb4P_R7g0XsRi2f1-L6gofI1bvpL_xNT4",
+        authDomain: "crud-rentalmobil-13873.firebaseapp.com",
+        projectId: "crud-rentalmobil-13873",
+        storageBucket: "crud-rentalmobil-13873.appspot.com",
+        messagingSenderId: "326604570867",
+        appId: "1:326604570867:web:6452b811fb709cdb5eb786",
+      };
+  
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      console.info("App is initialized", app)
+    </script>
+  
+  
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -100,5 +121,6 @@
       loadMainDartJs();
     }
   </script>
-</body>
-</html>
+
+
+</body></html>
