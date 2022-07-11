@@ -116,7 +116,7 @@ class _BokingState extends State<Boking> {
                 ),
               ),
               onPressed: () {},
-              child: Text('REGISTER'),
+              child: Text('Booking'),
             ),
           ),
         ])));

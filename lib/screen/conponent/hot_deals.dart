@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uas/screen/detail/booking.dart';
 import 'package:uas/screen/detail/detail_mobil.dart';
 import 'package:uas/utils/colors.dart';
 import 'package:uas/utils/sizes.dart';
@@ -21,7 +22,7 @@ class HotDeals extends StatelessWidget {
             price: 220000,
             press: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => DetailMobil(),
+                builder: (context) => Boking(),
               ));
             },
           ),
@@ -32,7 +33,7 @@ class HotDeals extends StatelessWidget {
             price: 300000,
             press: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => DetailMobil(),
+                builder: (context) => Boking(),
               ));
             },
           ),
@@ -50,7 +51,7 @@ class HotDeals extends StatelessWidget {
             price: 270000,
             press: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => DetailMobil(),
+                builder: (context) => Boking(),
               ));
             },
           ),
@@ -134,7 +135,7 @@ class HotDealCard extends StatelessWidget {
                 color: primaryColor,
                 onPressed: () {
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => DetailMobil(),
+                    builder: (context) => Boking(),
                   ));
                 },
                 child: Text(
