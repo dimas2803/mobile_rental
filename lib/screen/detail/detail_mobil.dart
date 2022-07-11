@@ -205,6 +205,13 @@ class _Booking extends State<Booking> {
                   ]),
                 )),
           ],
+          currentStep: _index,
+          onStepTapped: (index) {
+            setState(() {
+              _index = index;
+            });
+          },
+          controlsBuilder: (BuildContext context, {VoidCallback onStepContinue, VoidCallback onStepCancel}) => Container(),
         ),
       );
 
