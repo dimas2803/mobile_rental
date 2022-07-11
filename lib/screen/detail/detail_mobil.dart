@@ -32,7 +32,7 @@ class _DetailMobilState extends State<DetailMobil> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/bulb.jpg"),
+            image: AssetImage("images/bgbumi.jpg"),
             fit: BoxFit.cover,
           ),
         ),
