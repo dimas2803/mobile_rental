@@ -21,7 +21,7 @@ class HotDeals extends StatelessWidget {
             price: 220000,
             press: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => DetailMobil(),
+                builder: (context) => Booking(),
               ));
             },
           ),
@@ -32,7 +32,7 @@ class HotDeals extends StatelessWidget {
             price: 300000,
             press: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => DetailMobil(),
+                builder: (context) => Booking(),
               ));
             },
           ),
@@ -50,7 +50,7 @@ class HotDeals extends StatelessWidget {
             price: 270000,
             press: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => DetailMobil(),
+                builder: (context) => Booking(),
               ));
             },
           ),
@@ -134,7 +134,7 @@ class HotDealCard extends StatelessWidget {
                 color: primaryColor,
                 onPressed: () {
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => DetailMobil(),
+                    builder: (context) => Booking(),
                   ));
                 },
                 child: Text(
