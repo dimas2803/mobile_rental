@@ -134,7 +134,7 @@ class HotDealCard extends StatelessWidget {
                 color: primaryColor,
                 onPressed: () {
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => Booking(),
+                    builder: (context) => DetailMobil(),
                   ));
                 },
                 child: Text(
