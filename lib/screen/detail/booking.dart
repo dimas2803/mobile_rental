@@ -6,85 +6,103 @@ class Boking extends StatefulWidget {
   _BokingState createState() => _BokingState();
 }
 
-class _DetailMobilState extends State<> {
+class _BokingState extends State<Boking> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (context) => ListCar(),
-            ));
-          },
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (context) => ListCar(),
+              ));
+            },
+          ),
+          iconTheme: IconThemeData(
+            color: Colors.white,
+          ),
+          backgroundColor: Colors.teal[700],
+          centerTitle: true,
+          title: Text(
+            "Detail Mobil",
+            style: TextStyle(color: Colors.white),
+          ),
         ),
-        iconTheme: IconThemeData(
-          color: Colors.white,
-        ),
-        backgroundColor: Colors.teal[700],
-        centerTitle: true,
-        title: Text(
-          "Detail Mobil",
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
-      body: SingleChildScrollView(
+        body: SingleChildScrollView(
             child: Column(children: [
           SizedBox(height: 20),
-          Text("SignUp", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
-          Text(
-            'Buat Akun Anda Untuk Memulai',
-            style: TextStyle(color: Colors.black.withOpacity(0.5)),
-          ),
+          Text("Booking", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
           SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextFormField(
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  prefixIcon: Icon(Icons.person_outline, size: 20),
-                  // labelText: "Username",
-                  hintText: "Masukan Username",
-                )),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+              prefixIcon: Icon(Icons.person_outline, size: 20),
+              // labelText: "Username",
+              hintText: "Penerima",
+            )),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextFormField(
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  prefixIcon: Icon(Icons.email_outlined, size: 20),
-                  // labelText: "Username",
-                  hintText: "Email",
-                )),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+              prefixIcon: Icon(Icons.email_outlined, size: 20),
+              // labelText: "Username",
+              hintText: "Email",
+            )),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextFormField(
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  prefixIcon: Icon(Icons.lock_open_outlined, size: 20),
-                  // labelText: "Username",
-                  hintText: "Password",
-                )),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+              prefixIcon: Icon(Icons.lock_open_outlined, size: 20),
+              // labelText: "Username",
+              hintText: "Alamat",
+            )),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextFormField(
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  prefixIcon: Icon(Icons.lock, size: 20),
-                  // labelText: "Username",
-                  hintText: "Konfirm Password",
-                )),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+              prefixIcon: Icon(Icons.phone, size: 20),
+              // labelText: "Username",
+              hintText: "Nomor HP",
+            )),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+            child: TextFormField(
+                decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+              prefixIcon: Icon(Icons.calendar_month, size: 20),
+              hintText: "Waktu Pengambilan",
+            )),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+            child: TextFormField(
+                decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+              prefixIcon: Icon(Icons.access_alarm, size: 20),
+              hintText: "Total Hari Boking",
+            )),
           ),
           SizedBox(height: 20),
           SizedBox(
@@ -101,9 +119,6 @@ class _DetailMobilState extends State<> {
               child: Text('REGISTER'),
             ),
           ),
-
-        ]))
-    );
+        ])));
   }
 }
-
