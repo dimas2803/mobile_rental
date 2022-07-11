@@ -29,8 +29,13 @@ class _DetailMobilState extends State<DetailMobil> {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Center(
-        child: Text("Ini Adalah Halaman Detail Mobil"),
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/bulb.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
       ),
     );
   }
