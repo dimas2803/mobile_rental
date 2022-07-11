@@ -25,7 +25,7 @@ class _BokingState extends State<Boking> {
           backgroundColor: Colors.teal[700],
           centerTitle: true,
           title: Text(
-            "Detail Mobil",
+            "Boking Mobil",
             style: TextStyle(color: Colors.white),
           ),
         ),
