@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uas/screen/detail/booking.dart';
 import 'package:uas/screen/detail/detail_mobil.dart';
 import 'package:uas/utils/colors.dart';
 import 'package:uas/utils/sizes.dart';
@@ -17,40 +18,40 @@ class HotDeals extends StatelessWidget {
           HotDealCard(
             image: "images/honda/honda-brio.png",
             title: "HONDA BRIO",
-            location: "Toba Samosir",
+            bbm: "20 Liter",
             price: 220000,
             press: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => DetailMobil(),
+                builder: (context) => Boking(),
               ));
             },
           ),
           HotDealCard(
             image: "images/Toyota/toyota_avansa_new.png",
             title: "ALL NEW AVANSA",
-            location: "Dolok Sanggul",
+            bbm: "25 Liter",
             price: 300000,
             press: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => DetailMobil(),
+                builder: (context) => Boking(),
               ));
             },
           ),
           HotDealCard(
             image: "images/Nisan/nisan_grand_livina_old.png",
             title: "GRANDLIVINA OLD",
-            location: "Medan",
+            bbm: "20 Liter",
             price: 280000,
             press: () {},
           ),
           HotDealCard(
             image: "images/daihatsu/daihatsu-sigra.png",
             title: "SIGRA",
-            location: "Jakarta",
+            bbm: "25 Liter",
             price: 270000,
             press: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => DetailMobil(),
+                builder: (context) => Boking(),
               ));
             },
           ),
@@ -65,12 +66,12 @@ class HotDealCard extends StatelessWidget {
     Key key,
     this.image,
     this.title,
-    this.location,
+    this.bbm,
     this.price,
     this.press,
   }) : super(key: key);
 
-  final String image, title, location;
+  final String image, title, bbm;
   final int price;
   final Function press;
   @override
@@ -107,7 +108,7 @@ class HotDealCard extends StatelessWidget {
               alignment: Alignment.topLeft,
               padding: new EdgeInsets.only(left: defaultPadding),
               child: Text(
-                "$location",
+                "$bbm",
                 style: Theme.of(context).textTheme.button.copyWith(color: primaryColor.withOpacity(0.5)),
               ),
             ),
@@ -134,7 +135,7 @@ class HotDealCard extends StatelessWidget {
                 color: primaryColor,
                 onPressed: () {
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => DetailMobil(),
+                    builder: (context) => Boking(),
                   ));
                 },
                 child: Text(
