@@ -32,7 +32,7 @@ class _BokingState extends State<Boking> {
         body: SingleChildScrollView(
             child: Column(children: [
           SizedBox(height: 20),
-          Text("Booking", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
+          Text("Isi Data Dibawah Ini", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
           SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
