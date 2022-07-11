@@ -18,7 +18,7 @@ class HotDeals extends StatelessWidget {
           HotDealCard(
             image: "images/honda/honda-brio.png",
             title: "HONDA BRIO",
-            bbm: "20",
+            bbm: "20 Liter",
             price: 220000,
             press: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
