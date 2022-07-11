@@ -65,8 +65,7 @@ class _BokingState extends State<Boking> {
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
-              prefixIcon: Icon(Icons.lock_open_outlined, size: 20),
-              // labelText: "Username",
+              prefixIcon: Icon(Icons.location_city_outlined, size: 20),
               hintText: "Alamat",
             )),
           ),
@@ -100,7 +99,7 @@ class _BokingState extends State<Boking> {
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
-              prefixIcon: Icon(Icons.access_alarm, size: 20),
+              prefixIcon: Icon(Icons.view_day_outlined, size: 20),
               hintText: "Total Hari Boking",
             )),
           ),
