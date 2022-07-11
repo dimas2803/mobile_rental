@@ -1,35 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:uas/screen/list_car.dart';
 
-class DetailMobil extends StatefulWidget {
-  const DetailMobil({Key key}) : super(key: key);
-  _DetailMobilState createState() => _DetailMobilState();
+class Boking extends StatefulWidget {
+  const Boking({Key key}) : super(key: key);
+  _BokingState createState() => _BokingState();
 }
 
-class _DetailMobilState extends State<DetailMobil> {
+class _DetailMobilState extends State<> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => ListCar(),
-              ));
-            },
-          ),
-          iconTheme: IconThemeData(
-            color: Colors.white,
-          ),
-          backgroundColor: Colors.teal[700],
-          centerTitle: true,
-          title: Text(
-            "Detail Mobil",
-            style: TextStyle(color: Colors.white),
-          ),
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pushReplacement(MaterialPageRoute(
+              builder: (context) => ListCar(),
+            ));
+          },
         ),
-        body: SingleChildScrollView(
+        iconTheme: IconThemeData(
+          color: Colors.white,
+        ),
+        backgroundColor: Colors.teal[700],
+        centerTitle: true,
+        title: Text(
+          "Detail Mobil",
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      body: SingleChildScrollView(
             child: Column(children: [
           SizedBox(height: 20),
           Text("SignUp", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
@@ -42,49 +42,49 @@ class _DetailMobilState extends State<DetailMobil> {
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextFormField(
                 decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(30),
-              ),
-              prefixIcon: Icon(Icons.person_outline, size: 20),
-              // labelText: "Username",
-              hintText: "Masukan Username",
-            )),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  prefixIcon: Icon(Icons.person_outline, size: 20),
+                  // labelText: "Username",
+                  hintText: "Masukan Username",
+                )),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextFormField(
                 decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(30),
-              ),
-              prefixIcon: Icon(Icons.email_outlined, size: 20),
-              // labelText: "Username",
-              hintText: "Email",
-            )),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  prefixIcon: Icon(Icons.email_outlined, size: 20),
+                  // labelText: "Username",
+                  hintText: "Email",
+                )),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextFormField(
                 decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(30),
-              ),
-              prefixIcon: Icon(Icons.lock_open_outlined, size: 20),
-              // labelText: "Username",
-              hintText: "Password",
-            )),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  prefixIcon: Icon(Icons.lock_open_outlined, size: 20),
+                  // labelText: "Username",
+                  hintText: "Password",
+                )),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextFormField(
                 decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(30),
-              ),
-              prefixIcon: Icon(Icons.lock, size: 20),
-              // labelText: "Username",
-              hintText: "Konfirm Password",
-            )),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  prefixIcon: Icon(Icons.lock, size: 20),
+                  // labelText: "Username",
+                  hintText: "Konfirm Password",
+                )),
           ),
           SizedBox(height: 20),
           SizedBox(
@@ -101,6 +101,9 @@ class _DetailMobilState extends State<DetailMobil> {
               child: Text('REGISTER'),
             ),
           ),
-        ])));
+
+        ]))
+    );
   }
 }
+
