@@ -114,7 +114,9 @@ class _BokingState extends State<Boking> {
                   borderRadius: BorderRadius.circular(30),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Berhasil Membooking')));
+              },
               child: Text('Booking'),
             ),
           ),
