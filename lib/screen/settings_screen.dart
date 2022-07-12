@@ -49,7 +49,7 @@ class _Setting_screenState extends State<Setting_screen> {
                   width: 8,
                 ),
                 Text(
-                  "Account",
+                  "Akun",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ],
@@ -61,11 +61,11 @@ class _Setting_screenState extends State<Setting_screen> {
             SizedBox(
               height: 10,
             ),
-            buildAccountOptionRow(context, "Change password"),
-            buildAccountOptionRow(context, "Content settings"),
-            buildAccountOptionRow(context, "Social"),
-            buildAccountOptionRow(context, "Language"),
-            buildAccountOptionRow(context, "Privacy and security"),
+            buildAccountOptionRow(context, "Ganti Password"),
+            buildAccountOptionRow(context, "Konten Seting"),
+            buildAccountOptionRow(context, "Sosial"),
+            buildAccountOptionRow(context, "Bahasa"),
+            buildAccountOptionRow(context, "Privasi dan Keamanan"),
             SizedBox(
               height: 40,
             ),
@@ -79,7 +79,7 @@ class _Setting_screenState extends State<Setting_screen> {
                   width: 8,
                 ),
                 Text(
-                  "Notifications",
+                  "Notifikasi",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ],
@@ -91,9 +91,9 @@ class _Setting_screenState extends State<Setting_screen> {
             SizedBox(
               height: 10,
             ),
-            buildNotificationOptionRow("New for you", true),
-            buildNotificationOptionRow("Account activity", true),
-            buildNotificationOptionRow("Opportunity", false),
+            buildNotificationOptionRow("Baru Untukmu", true),
+            buildNotificationOptionRow("Aktivitas Akun", true),
+            buildNotificationOptionRow("Peluang", false),
             SizedBox(
               height: 50,
             ),
