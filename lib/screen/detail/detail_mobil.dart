@@ -29,9 +29,6 @@ class _DetailMobilState extends State<DetailMobil> {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Center(
-        child: Text("Ini Adalah Halaman Detail Mobil"),
-      ),
     );
   }
 }
