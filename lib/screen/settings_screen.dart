@@ -64,7 +64,7 @@ class _Setting_screenState extends State<Setting_screen> {
             buildAccountOptionRow(context, "Ganti Password"),
             buildAccountOptionRow(context, "Content settings"),
             buildAccountOptionRow(context, "Sosial"),
-            buildAccountOptionRow(context, "Bahasa,
+            buildAccountOptionRow(context, "Bahasa"),
             buildAccountOptionRow(context, "Privasi dan Keamanan"),
             SizedBox(
               height: 40,
