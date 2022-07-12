@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               onTap: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => Settings_screen(),
+                  builder: (context) => settings_screen(),
                 ));
               },
               title: new Text("Settings"),
@@ -74,4 +74,6 @@ class HomeScreen extends StatelessWidget {
       body: Body(),
     );
   }
+
+  settings_screen() {}
 }
